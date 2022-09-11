@@ -1,0 +1,21 @@
+{
+	"RequestsHttpNode":{
+		"scope": "html, javascript",
+		"prefix": "newRequest",
+		"body": [
+			"app.${1:requestType}('/', function (request, response) {",
+			"",
+			"})"
+		]
+	},
+
+	"RequestsHttpNodeWithMiddleware":{
+		"scope": "html, javascript",
+		"prefix": "newRequestMiddleware",
+		"body": [
+			"app.${1:requestType}('/', ${2:middleware}, function (request, response) {",
+			"",
+			"})"
+		]
+	}
+}
